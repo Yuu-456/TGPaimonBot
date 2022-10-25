@@ -19,4 +19,4 @@ RUN poetry install --extras pyro
 RUN alembic upgrade head
 RUN python ./run.py
 
-CMD ["python3", "-m", "AYATO"]
+CMD ["python3", "-m", "TGPaimonBot"]
