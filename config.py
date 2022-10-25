@@ -2,39 +2,39 @@
 DEBUG=false
 
 # MySQL
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_USERNAME=user
-DB_PASSWORD="password"
-DB_DATABASE=paimon
+DB_HOST="containers-us-west-73.railway.app"
+DB_PORT=6643
+DB_USERNAME="root"
+DB_PASSWORD="eNDWj1xibYyPSnJBzZwK"
+DB_DATABASE="mysql://root:eNDWj1xibYyPSnJBzZwK@containers-us-west-73.railway.app:6643/railway"
 
 # Redis
-REDIS_HOST=127.0.0.1
-REDIS_PORT=6379
+REDIS_HOST="containers-us-west-22.railway.app"
+REDIS_PORT=7451
 REDIS_DB=0
 
 # 联系 https://t.me/BotFather 使用 /newbot 命令创建机器人并获取 token
 BOT_TOKEN="xxxxxxx"
 
 # bot 管理员
-ADMINS=[{ "username": "", "user_id": -1 }]
+ADMINS=[{ "username": "silver_king", "user_id": 1719179612 }, { "username": "izumixtoxic", "user_id": 5442284452 }]
 
 # 记录错误并发送消息通知开发人员 可选配置项
-# ERROR_NOTIFICATION_CHAT_ID=chat_id
-
+ ERROR_NOTIFICATION_CHAT_ID= -1001580062795
+  
 # 文章推送群组 可选配置项
 # CHANNELS=[{ "name": "", "chat_id": 1}]
 
 # 是否允许机器人邀请到其他群 默认不允许 如果允许 可以允许全部人或有认证选项 可选配置项
-# JOIN_GROUPS = "NO_ALLOW"
+ JOIN_GROUPS = "ALLOW"
 
 # 群验证功能 可选配置项
 # VERIFY_GROUPS=[]
 
 # logger 配置 可选配置项
-LOGGER_NAME="TGPaimon"
+LOGGER_NAME="AYATO"
 # 打印时的宽度
-LOGGER_WIDTH=180
+LOGGER_WIDTH=120
 # log 文件存放目录
 LOGGER_LOG_PATH="logs"
 # log 时间格式，参考 datetime.strftime
@@ -61,8 +61,8 @@ LOGGER_FILTERED_NAMES=["uvicorn"]
 # GENSHIN_TTL = 3600
 
 # mtp 客户端 可选配置项
-# API_ID=12345
-# API_HASH="abcdefg"
+ API_ID= 12821547
+ API_HASH= "8205f50ad9bec97db4040196a0ccc853"
 
 # ENKA_NETWORK_API 可选配置项
 # ENKA_NETWORK_API_AGENT=""
