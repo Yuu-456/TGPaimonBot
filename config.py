@@ -14,7 +14,7 @@ REDIS_PORT=7451
 REDIS_DB=0
 
 # 联系 https://t.me/BotFather 使用 /newbot 命令创建机器人并获取 token
-BOT_TOKEN="xxxxxxx"
+BOT_TOKEN="5776376644:AAG3I5oJUt6VnO7rxQWoYzCHniH8RKDJXXI"
 
 # bot 管理员
 ADMINS=[{ "username": "silver_king", "user_id": 1719179612 }, { "username": "izumixtoxic", "user_id": 5442284452 }]
