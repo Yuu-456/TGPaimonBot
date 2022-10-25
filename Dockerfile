@@ -19,8 +19,17 @@ RUN apt-get update -y && apt-get upgrade -y \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 RUN apt-get install libxml2-dev libxslt-dev python
-RUN pip3 install --upgrade poetry 
-RUN poetry install --extras pyro
-RUN ./run.py
 
-CMD ["python3", "-m", "TGPaimonBot"]
+COPY requirements.txt .
+
+RUN pip3 install wheel
+RUN pip3 install --no-cache-dir -U -r requirements.txt
+COPY . .
+CMD ["python3", "-m", "core"]
+CMD ["python3", "-m", "metadata"]
+CMD ["python3", "-m", "plugins"]
+CMD ["python3", "-m", "medules"]
+CMD ["python3", "-m", "resources"]
+CMD ["python3", "-m", "test"]
+CMD ["python3", "-m", "utils"]
+CMD ["python3", "-m", "alembic"]
