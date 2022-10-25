@@ -20,7 +20,6 @@ RUN apt-get update -y && apt-get upgrade -y \
     && rm -rf /var/lib/apt/lists/*
 RUN apt-get install libxml2-dev libxslt-dev python
 RUN pip3 install --upgrade poetry 
-RUN install chromium
 RUN poetry install --extras pyro
 RUN ./run.py
 
