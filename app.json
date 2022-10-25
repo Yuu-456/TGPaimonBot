@@ -2,15 +2,19 @@
       "name": "AYATO",
       "description": "A AYATO BOT.",
       "keywords": [
-         "telegram",
-         "advance",
-         "group",
-         "manager",
-         "naorobot"
+         "telegram"
       ],
+   "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-python"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    }
+  ],  
    "env": {
       "ENV": {
-         "description": "hmm",
+         "description": "bleh",
          "required": true,
          "value": "True"
       }
